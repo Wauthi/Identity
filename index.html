@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Express</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Identity Express</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="parallax">
+            <h1>Identity Express</h1>
+            <h2>COMPANY PROFILE</h2>
+            <h3>DESIGN | PRINT | PHOTO</h3>
+        </section>
+
+        <section id="about">
+            <h2>About Our Company</h2>
+            <p>Identity Express Ltd is a full Creative Media service that delivers high-quality products and services to clients with the goal of achieving and maintaining client brand goals. From modern design work to quality finish prints and impact videos, our goal is to always make sure your brand identity is consistent and communicates effectively.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Card Printing</li>
+                <li>Design Work</li>
+                <li>Corporate Photography: Events</li>
+                <li>Company Profile Headshots</li>
+                <li>Print Branding</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>Our Work</h2>
+            <div class="portfolio-grid">
+                <img src="project1.jpg" alt="Project 1">
+                <img src="project2.jpg" alt="Project 2">
+                <img src="project3.jpg" alt="Project 3">
+            </div>
+            <p>We designed and printed staff identification cards for Kenya Association of Manufacturers (KAM) together with its affiliate companies as per their desire. They opted for the same design with changes in their brand colours to signify the difference.</p>
+            <p>We have also printed cards for PS Kenya, Kuehne+Nagel, Deloitte, KISC Schools, and SIM Sudan, a religious organization based in South Sudan.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Phone: 0725 328 827</p>
+            <p>Phone: 0705 450 051</p>
+            <p>Email: <a href="mailto:identityexpressid@gmail.com">identityexpressid@gmail.com</a></p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Identity Express</p>
+    </footer>
+
+    <script>
+        gsap.from("header", {duration: 1, y: -100, opacity: 0, ease: "bounce"});
+        gsap.from(".parallax h1, .parallax h2, .parallax h3", {duration: 1, scale: 0.8, opacity: 0, ease: "power2.out"});
+        gsap.from("#about, #services, #portfolio, #contact", {duration: 1, opacity: 0, y: 50, stagger: 0.3, ease: "power2.out"});
+    </script>
+</body>
+</html>
